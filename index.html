@@ -1,820 +1,1023 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
-    <title>Đức Long - Full Stack Developer</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Trần Đức Long | Senior Full Stack Software Engineer (.NET & Angular)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Trần Đức Long - Senior Full Stack Software Engineer with 5+ years of experience in .NET Core, Microservices, Angular, High-Performance Backend, and Cloud Architecture.">
+    <meta name="keywords" content="Tran Duc Long, Software Engineer, .NET Core, ASP.NET Core, Angular, Microservices, Fullstack Developer, Hanoi University of Science and Technology, C#, Redis, Docker">
+    <meta name="author" content="Trần Đức Long">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trần Đức Long | Senior Full Stack Software Engineer">
+    <meta property="og:description" content="5+ years in .NET technologies, scalable Microservices, modern Angular/Vue, and high-performance backend systems.">
+    <meta property="og:image" content="img/avatar.png">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/avatar.png" rel="icon" type="image/png">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap 5 CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Modern Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+<body>
+    <!-- Antigravity Physics Interactive Canvas Layer -->
+    <canvas id="antigravityCanvas"></canvas>
 
+    <!-- Ambient Dynamic Glow Orbs -->
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">My Profile</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About Me</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
-            </div>
-            <!-- <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block"> -->
-            <!-- <h1 class="text-primary fw-bold m-0">ProMan</h1>
-            </a> -->
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
-                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Tran Duc Long</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Fullstack Developer</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="./DucLong.pdf" class="btn btn-primary py-3 px-4 me-5" download>Download My CV</a>
-                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <!-- Executive Monogram Brandmark -->
+                <a class="navbar-brand-custom" href="#home" id="brandLogo">
+                    <div class="brand-monogram">
+                        <span class="brand-letters">DL</span>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="img/avatar.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Video Modal Start -->
-    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+                    <div class="brand-info">
+                        <span class="brand-name">Trần Đức Long</span>
+                        <span class="brand-role">Senior Software Engineer</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Video Modal End -->
+                </a>
 
+                <button class="navbar-toggler navbar-toggler-custom ms-auto me-2 me-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-4"></i>
+                </button>
 
-    <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">2</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of working experience as a web designer & developer</h3>
-                    </div>
-                    <p class="mb-4">I'm a full stack software engineer with 2 years of experience in Web Development.
-                        I have 2 years of experience in .NET-related technologies and 1 years of Modern
-                        Front-End Web Development.
-                        With my knowledge of Web Development, i enjoy solving back-end problems and
-                        try to create the best user experience for users. I also spend time learn new
-                        technologies and best practices to become a better engineer.
-                    </p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Professional</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Experience</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality And Performance
-                    </p>
-                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
-                </div>
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4">I have good understanding of software engineer and programming languages. In the
-                        future, I want to improve my skills more and more and learn new technologies and best practices.
-                    </p>
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">ASP.NET</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS & SCSS</h6>
-                                    <h6 class="font-weight-bold">75%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Typescript & JavaScript</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Angular</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Docker & System</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Database</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                href="#tab-1">Experience</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav align-items-lg-center gap-1 my-3 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom active" href="#home">Home</a>
                         </li>
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                href="#tab-2">Education</button>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#skills">Tech Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#experience">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Fullstack Web Developer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">9/2021 - Now</p>
-                                    <h6 class="mb-0">Mobix and Edmicro Company</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Fresher Web Developer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">6/2021 - 9/2021</p>
-                                    <h6 class="mb-0">Misa JSC Company</h6>
-                                </div>
-                                <!-- <div class="col-sm-6">
-                                    <h5>Web Designer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Designer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
-                                </div> -->
+
+                    <div class="d-flex align-items-center gap-3 ms-lg-4 mt-3 mt-lg-0">
+                        <!-- Theme Toggle Button -->
+                        <button class="theme-toggle-btn" id="themeToggleBtn" title="Switch Theme (Light / Dark)" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-stars" id="themeIcon"></i>
+                        </button>
+
+                        <a href="CV_Tran-Duc-Long-030625.pdf" download="CV_Tran-Duc-Long-030625.pdf" class="btn-primary-glow" id="navCvDownloadBtn">
+                            <i class="bi bi-download"></i>
+                            <span>Get CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <!-- Status Pill -->
+                    <div class="hero-status-pill reveal-fade">
+                        <span class="status-pulse-dot"></span>
+                        <span class="status-text">Available for Senior &amp; Lead Engineering Roles</span>
+                    </div>
+
+                    <h1 class="hero-title reveal-fade">
+                        Hi, I'm <span class="text-gradient">Trần Đức Long</span>
+                    </h1>
+                    
+                    <div class="typing-container reveal-fade">
+                        <span id="typedRole"></span>
+                        <span class="blinking-cursor">|</span>
+                    </div>
+
+                    <p class="hero-subtitle reveal-fade">
+                        5 years of experience in enterprise web engineering, specializing in <strong>.NET Core</strong> &amp; distributed <strong>Microservices</strong> architecture, paired with 3 years delivering high-impact frontends in <strong>Angular</strong> &amp; <strong>Vue.js</strong>. Proven track record in Fintech wallets, high-concurrency telecom platforms, and public cloud systems.
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center gap-3 hero-cta-group reveal-fade">
+                        <a href="CV_Tran-Duc-Long-030625.pdf" download="CV_Tran-Duc-Long-030625.pdf" class="btn-primary-glow" id="heroDownloadCvBtn">
+                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                            <span>Download Full CV</span>
+                        </a>
+                        <a href="#projects" class="btn-secondary-glass" id="heroViewProjectsBtn">
+                            <i class="bi bi-collection-play-fill"></i>
+                            <span>Explore Projects</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-social-links reveal-fade">
+                        <a href="https://github.com/chukun09" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:long.tranducbn@gmail.com" class="social-icon-btn" title="Email Direct">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="tel:0981392920" class="social-icon-btn" title="Call Direct">
+                            <i class="bi bi-telephone-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/duclong1412/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/longtranduc.2000/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="hero-image-wrapper reveal-fade">
+                        <!-- Soft Ambient Backlight -->
+                        <div class="portrait-backlight"></div>
+
+                        <div class="profile-card-container magnetic-tilt">
+                            <div class="profile-card-inner">
+                                <img src="img/avatar.png" alt="Trần Đức Long - Senior Software Engineer" class="profile-img">
                             </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-12">
-                                    <h5>Information Technology</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2022</p>
-                                    <h6 class="mb-0">Ha Noi University of Science And Technology</h6>
-                                    <h6 class="mb-0 mt-2">Degree Grade: Very Good</h6>
+
+                            <!-- Zero-G Harmonic Floating Tech Badges -->
+                            <div class="floating-chip chip-dotnet zero-g-1">
+                                <i class="fa-brands fa-microsoft"></i>
+                                <span>.NET 8 / C#</span>
+                            </div>
+
+                            <div class="floating-chip chip-microservices zero-g-2">
+                                <i class="fa-brands fa-docker"></i>
+                                <span>Microservices</span>
+                            </div>
+
+                            <div class="floating-chip chip-angular zero-g-3">
+                                <i class="fa-brands fa-angular"></i>
+                                <span>Angular &amp; Vue</span>
+                            </div>
+
+                            <!-- Executive Experience Badge -->
+                            <div class="exp-floating-badge zero-g-badge">
+                                <div class="exp-badge-icon">
+                                    <i class="bi bi-patch-check-fill"></i>
                                 </div>
-                                <!-- <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div> -->
-                                <!-- <div class="col-sm-6">
-                                    <h5>Web Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                <div class="exp-badge-content">
+                                    <span class="exp-num">5+</span>
+                                    <span class="exp-text">Years Production Exp</span>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Expertise End -->
+    </section>
 
-
-    <!-- Service Start -->
-    <!-- <div class="container-fluid bg-light my-5 py-6" id="service">
+    <!-- Key Metrics Highlight Section -->
+    <section class="metrics-section">
         <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
-                </div>
-            </div>
             <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                <div class="col-6 col-lg-3 reveal-on-scroll">
+                    <div class="glass-card metric-card spotlight-card">
+                        <div class="metric-icon-box metric-icon-indigo">
+                            <i class="bi bi-clock-history"></i>
                         </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Creative Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
+                        <div>
+                            <div class="metric-number">5+</div>
+                            <div class="metric-label">Years Web Dev</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+
+                <div class="col-6 col-lg-3 reveal-on-scroll">
+                    <div class="glass-card metric-card spotlight-card">
+                        <div class="metric-icon-box metric-icon-cyan">
+                            <i class="bi bi-layers-half"></i>
                         </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Graphic Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Web Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
+                        <div>
+                            <div class="metric-number">5+</div>
+                            <div class="metric-label">Enterprise Systems</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+
+                <div class="col-6 col-lg-3 reveal-on-scroll">
+                    <div class="glass-card metric-card spotlight-card">
+                        <div class="metric-icon-box metric-icon-emerald">
+                            <i class="bi bi-mortarboard-fill"></i>
                         </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
+                        <div>
+                            <div class="metric-number">HUST</div>
+                            <div class="metric-label">Degree: Very Good</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal-on-scroll">
+                    <div class="glass-card metric-card spotlight-card">
+                        <div class="metric-icon-box metric-icon-purple">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <div>
+                            <div class="metric-number">99.9%</div>
+                            <div class="metric-label">High Reliability Focus</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Service End -->
+    </section>
 
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
+    <!-- About Me Section -->
+    <section class="content-section" id="about">
         <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-person-badge"></i> About Me
+                </div>
+                <h2 class="section-title">
+                    Engineering Scalable Systems with <span class="text-gradient">Precision &amp; Passion</span>
+                </h2>
+                <p class="section-subtitle">
+                    Bridging powerful enterprise backends with responsive, intuitive frontends for seamless user experiences.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6 reveal-on-scroll">
+                    <div class="glass-card about-box h-100 spotlight-card">
+                        <h3 class="mb-3">Engineering Philosophy</h3>
+                        <p class="text-muted mb-3">
+                            I am a Full Stack Software Engineer graduated from <strong>Hanoi University of Science and Technology (ĐH Bách Khoa Hà Nội)</strong> with a <strong>Very Good</strong> degree in Computer Science / Information Technology.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Over the past 5 years, I have architected and maintained high-throughput financial e-wallets, multi-tenant gamification platforms for Mobifone, smart agricultural management systems, and nationwide digital transformation initiatives.
+                        </p>
+
+                        <div class="about-highlight-list">
+                            <div class="about-highlight-item">
+                                <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+                                <div>
+                                    <strong class="text-main">Backend &amp; Distributed Systems:</strong> Deep expertise in C#, .NET 8/9, ASP.NET Core, EF Core, Microservices, Redis caching, RabbitMQ message brokers, and Keycloak security.
+                                </div>
+                            </div>
+                            <div class="about-highlight-item">
+                                <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+                                <div>
+                                    <strong class="text-main">Frontend Modernization:</strong> 3+ years delivering robust Single Page Applications using Angular, Vue.js, TypeScript, and reactive architectures.
+                                </div>
+                            </div>
+                            <div class="about-highlight-item">
+                                <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+                                <div>
+                                    <strong class="text-main">Architectural Rigor:</strong> Disciplined adherence to SOLID principles, clean code patterns, defensive error handling, and production Docker containerization.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
+                    <div class="row g-4 h-100">
+                        <div class="col-sm-6 reveal-on-scroll">
+                            <div class="glass-card feature-pill-card spotlight-card">
+                                <span class="pill-icon text-primary"><i class="bi bi-lightning-charge-fill"></i></span>
+                                <h4 class="h5 mb-2">High Throughput</h4>
+                                <p class="text-muted small mb-0">
+                                    Optimized database indexing, async pipeline tuning, split queries, and distributed Redis caching to minimize latencies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal-on-scroll">
+                            <div class="glass-card feature-pill-card spotlight-card">
+                                <span class="pill-icon text-info"><i class="bi bi-shield-check"></i></span>
+                                <h4 class="h5 mb-2">Fintech Compliance</h4>
+                                <p class="text-muted small mb-0">
+                                    Experience building digital wallets and transaction engines complying with strict financial regulations and security standards.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal-on-scroll">
+                            <div class="glass-card feature-pill-card spotlight-card">
+                                <span class="pill-icon text-success"><i class="bi bi-box-seam-fill"></i></span>
+                                <h4 class="h5 mb-2">DevOps &amp; Docker</h4>
+                                <p class="text-muted small mb-0">
+                                    Hands-on Linux server infrastructure, containerized deployments, and automated CI/CD workflows for seamless releases.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal-on-scroll">
+                            <div class="glass-card feature-pill-card spotlight-card">
+                                <span class="pill-icon text-warning"><i class="bi bi-robot"></i></span>
+                                <h4 class="h5 mb-2">AI-Augmented Dev</h4>
+                                <p class="text-muted small mb-0">
+                                    Leveraging modern AI tools (Cursor, Claude, GitHub Copilot) to accelerate development velocity and maintain high code quality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li> -->
-                <!-- <li class="mx-3" data-filter=".second">Graphic Design</li> -->
-                <!-- </ul> -->
             </div>
         </div>
-        <div class="container mt-3 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Ananda One (2021 - 2022)</h4>
-                            <p class="card-text">A outsourcing project from Thailand to manage information of users and
-                                service
-                                management of urban areas and resorts.</p>
-                            <ul>
-                                <li>Develop API and fix bugs for Mobile Team.</li>
-                                <li>Working directly with Product Owner and the Design Team to develop UI/UX for
-                                    project.
-                                </li>
-                                <li>Refactoring code, maintaining old features and building new features.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="https://care-admin-uat.ananda.co.th/" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div>
+    </section>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-body">
-                            <h4 class="card-title">Plant Protection Department (2022 - Ongoing)</h4>
-                            <p class="card-text">A series of projects from government to convert plant protection manual
-                                system
-                                to digital system.
-                            </p>
-                            <ul>
-                                <li>Define the architecture and coding convention, and set up server system and
-                                    Docker for the project.
-                                </li>
-                                <li>Design database schema (MySQL, PostgresQL), develop back-end API
-                                    (ASP.NET Core) and implement it in front-end.
-                                </li>
-                                <li>Build user interface from design architecture (Angular) for project.
-
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="https://cms.packinghouse.online" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-body">
-                            <h4 class="card-title">MobiFarm Project (2022 - Ongoing)</h4>
-                            <p class="card-text">A project cooperate with Mobiphone to build a super app with many
-                                features.
-                                The goal of the project is to help farmers and packing house record, retrieve
-                                information and watch tranning videos.
-                            </p>
-                            <ul>
-                                <li>Define the architecture and coding convention, and set up server system and
-                                    Docker for the project.
-                                </li>
-                                <li>Design database schema (MongoDB), develop back-end API (ASP.NET Core).
-                                </li>
-                                <li>Fix bugs and build features according to customer requirements.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="#" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-body">
-                            <h4 class="card-title">Budhism Management System (2022 - Ongoing)</h4>
-                            <p class="card-text">This is a outsourcing project to manage informations of Vinh Nghiem
-                                Pagoda. It helps user can create, delete and edit records. Besides that, it provides for
-                                pagoda handles file same as import, export files.</p>
-                            <ul>
-                                <li>Build user interface from design architecture (Angular) for project.
-                                </li>
-                                <li>Define the architecture and coding convention, and set up server system and Docker
-                                    for the project.
-                                </li>
-                                <li>Optimize performance of system to imporve speed handle requests.
-                                </li>
-                            </ul>
-                            <!-- <div class="text-end">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="https://pagodadms.online/" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-body">
-                            <h4 class="card-title">Review CV and Human Resources Management (2022 - 2022)</h4>
-                            <p class="card-text">This is a my graudation project. It is a recruitment system can provide
-                                for user some features same as: create your CV, see CV of other users, apply jobs, post
-                                recruitment information, ...</p>
-                            <!-- <div class="text-end">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                            <ul>
-                                <li>Build user interface and design UI/UX from design architecture (Angular) for
-                                    project.
-                                </li>
-                                <li>Develop API, design database schema and build architecture for systems.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="#" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-body">
-                            <h4 class="card-title">Review CV and Human Resources Management</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p> -->
-                <!-- <div class="text-end">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                <!-- </div>
-                        <div class="text-end mb-3 me-3">
-                            <a href="#" class="btn btn-success">Go to the project</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-6 pb-5" id="team">
+    <!-- Skills & Tech Stack Matrix -->
+    <section class="content-section" id="skills">
         <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
+            <div class="text-center mb-5 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-stack"></i> Expertise
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
+                <h2 class="section-title">
+                    Comprehensive <span class="text-gradient">Tech Stack Matrix</span>
+                </h2>
+                <p class="section-subtitle">
+                    Production-proven technologies, frameworks, and engineering methodologies refined across enterprise environments.
+                </p>
             </div>
+
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
+                <!-- Backend & Architecture -->
+                <div class="col-lg-6 reveal-on-scroll">
+                    <div class="glass-card skill-category-card spotlight-card">
+                        <div class="category-header">
+                            <div class="category-icon metric-icon-indigo">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h3 class="h5 mb-0">Backend &amp; Architecture</h3>
+                                <small class="text-muted">Core Enterprise &amp; Microservices</small>
                             </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                        <div class="tech-badge-container">
+                            <span class="tech-badge featured"><i class="fa-brands fa-microsoft"></i> C# / .NET 8 &amp; 9</span>
+                            <span class="tech-badge featured"><i class="fa-solid fa-gear"></i> ASP.NET Core</span>
+                            <span class="tech-badge"><i class="fa-solid fa-network-wired"></i> Web API</span>
+                            <span class="tech-badge"><i class="fa-solid fa-cubes"></i> Microservices</span>
+                            <span class="tech-badge"><i class="fa-solid fa-database"></i> Entity Framework Core</span>
+                            <span class="tech-badge"><i class="fa-solid fa-code"></i> ASP.NET MVC</span>
+                            <span class="tech-badge"><i class="fa-solid fa-sitemap"></i> RESTful APIs</span>
+                            <span class="tech-badge"><i class="fa-solid fa-shield-halved"></i> SOLID Principles</span>
+                            <span class="tech-badge"><i class="fa-solid fa-diagram-project"></i> Design Patterns &amp; OOP</span>
+                            <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
+
+                <!-- Frontend & UI -->
+                <div class="col-lg-6 reveal-on-scroll">
+                    <div class="glass-card skill-category-card spotlight-card">
+                        <div class="category-header">
+                            <div class="category-icon metric-icon-cyan">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h3 class="h5 mb-0">Frontend &amp; Client Development</h3>
+                                <small class="text-muted">Modern Single Page Applications</small>
                             </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                        <div class="tech-badge-container">
+                            <span class="tech-badge featured"><i class="fa-brands fa-angular"></i> Angular</span>
+                            <span class="tech-badge featured"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+                            <span class="tech-badge"><i class="fa-brands fa-js"></i> TypeScript</span>
+                            <span class="tech-badge"><i class="fa-brands fa-square-js"></i> JavaScript (ES6+)</span>
+                            <span class="tech-badge"><i class="fa-solid fa-fire"></i> Blazor</span>
+                            <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                            <span class="tech-badge"><i class="fa-brands fa-sass"></i> SCSS / SASS</span>
+                            <span class="tech-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                            <span class="tech-badge"><i class="fa-solid fa-mobile-screen"></i> Responsive UI/UX</span>
+                            <span class="tech-badge"><i class="fa-solid fa-file-code"></i> Razor Pages</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
+
+                <!-- Database & Caching -->
+                <div class="col-lg-4 reveal-on-scroll">
+                    <div class="glass-card skill-category-card spotlight-card">
+                        <div class="category-header">
+                            <div class="category-icon metric-icon-emerald">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h3 class="h5 mb-0">Databases &amp; Caching</h3>
+                                <small class="text-muted">Relational &amp; NoSQL</small>
                             </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                        <div class="tech-badge-container">
+                            <span class="tech-badge featured"><i class="fa-solid fa-server"></i> SQL Server</span>
+                            <span class="tech-badge featured"><i class="fa-solid fa-elephant"></i> PostgreSQL</span>
+                            <span class="tech-badge"><i class="fa-solid fa-bolt"></i> Redis Cache</span>
+                            <span class="tech-badge"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                            <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span class="tech-badge"><i class="fa-solid fa-building"></i> Oracle Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Infrastructure -->
+                <div class="col-lg-4 reveal-on-scroll">
+                    <div class="glass-card skill-category-card spotlight-card">
+                        <div class="category-header">
+                            <div class="category-icon metric-icon-purple">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-0">DevOps &amp; Infrastructure</h3>
+                                <small class="text-muted">Deployment &amp; Brokers</small>
+                            </div>
+                        </div>
+                        <div class="tech-badge-container">
+                            <span class="tech-badge featured"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="tech-badge"><i class="fa-brands fa-linux"></i> Linux Servers</span>
+                            <span class="tech-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
+                            <span class="tech-badge"><i class="fa-solid fa-envelope-open-text"></i> RabbitMQ</span>
+                            <span class="tech-badge"><i class="fa-solid fa-key"></i> Keycloak Auth</span>
+                            <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools & Methodologies -->
+                <div class="col-lg-4 reveal-on-scroll">
+                    <div class="glass-card skill-category-card spotlight-card">
+                        <div class="category-header">
+                            <div class="category-icon metric-icon-indigo">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-0">AI Tools &amp; Practices</h3>
+                                <small class="text-muted">Productivity &amp; Quality</small>
+                            </div>
+                        </div>
+                        <div class="tech-badge-container">
+                            <span class="tech-badge featured"><i class="fa-solid fa-wand-magic-sparkles"></i> Cursor</span>
+                            <span class="tech-badge"><i class="fa-brands fa-github"></i> GitHub Copilot</span>
+                            <span class="tech-badge"><i class="fa-solid fa-comment-dots"></i> ChatGPT</span>
+                            <span class="tech-badge"><i class="fa-solid fa-terminal"></i> Claude AI</span>
+                            <span class="tech-badge"><i class="fa-solid fa-vial"></i> Unit Testing</span>
+                            <span class="tech-badge"><i class="fa-solid fa-users"></i> Team Collaboration</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
+    </section>
 
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-1.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
-                                tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-2.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
-                                tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-                                    src="img/testimonial-3.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
-                                tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
-                </div>
-                <!-- <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
-                </div> -->
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">19 To Huu, Nam Tu Liem, Ha Noi</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">0981 392 920</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">long.tranducbn@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/chukun09"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/longtranduc.2000/"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/duclong_1412/"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/duclong1412/"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">The contact form is currently inactive. If u need to contact me, please send me
-                        an
-                        email or message in social network.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Map Start -->
-    <!-- <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9226253668103!2d105.79156857593975!3d20.995738488910604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acb0bb0290f3%3A0xae2edc1236a1e6a0!2zMTkgUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1688024876859!5m2!1svi!2s"
-                    style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="100"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div> -->
-    <!-- Map End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
+    <!-- Featured Projects Showcase -->
+    <section class="content-section" id="projects">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom text-secondary" href="#">2023</a>, All Right Reserved.
+            <div class="text-center mb-4 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-briefcase"></i> Portfolio
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom text-secondary" href="#home">Đức Long</a>
-                    <!-- <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                        target="_blank">ThemeWagon</a> -->
+                <h2 class="section-title">
+                    Featured <span class="text-gradient">Production Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    Real-world enterprise systems engineered for high performance, reliability, and security.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="filter-container reveal-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="fintech">Fintech &amp; eWallet</button>
+                <button class="filter-btn" data-filter="telecom">Microservices &amp; Telecom</button>
+                <button class="filter-btn" data-filter="gov">Digital Transformation</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4" id="projectGrid">
+                <!-- Project 1: Milpay eWallet -->
+                <div class="col-lg-6 project-item reveal-on-scroll" data-category="fintech fullstack">
+                    <div class="glass-card project-card spotlight-card">
+                        <div class="project-header-meta">
+                            <span class="project-badge">Fintech &amp; eWallet</span>
+                            <span class="project-date"><i class="bi bi-calendar3"></i> 02/2025 - Present</span>
+                        </div>
+                        <h3 class="project-title">Milpay eWallet Platform</h3>
+                        <div class="project-company">
+                            <i class="bi bi-building"></i> IRIS Media Company • Backend Developer
+                        </div>
+                        <p class="project-desc">
+                            A secure and user-friendly digital wallet platform offering financial services, including money transfers, bill payments, mobile top-ups, and QR code payments. Complies with strict financial regulations and data security standards.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Architected and maintained core back-end microservices: user authentication, high-throughput transaction processing, and wallet balance management.</li>
+                            <li>Enhanced system scalability, concurrent transaction throughput, and fault tolerance using Redis caching and SQL Server.</li>
+                            <li>Integrated Keycloak for centralized authentication and cooperated closely with Mobile &amp; DevOps teams for production deployment.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech-pills">
+                                <span class="project-tech-pill">.NET Core</span>
+                                <span class="project-tech-pill">SQL Server</span>
+                                <span class="project-tech-pill">MongoDB</span>
+                                <span class="project-tech-pill">Redis</span>
+                                <span class="project-tech-pill">Keycloak</span>
+                                <span class="project-tech-pill">RESTful APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Gamification System (Mobifone) -->
+                <div class="col-lg-6 project-item reveal-on-scroll" data-category="telecom">
+                    <div class="glass-card project-card spotlight-card">
+                        <div class="project-header-meta">
+                            <span class="project-badge">Microservices &amp; Telecom</span>
+                            <span class="project-date"><i class="bi bi-calendar3"></i> 2024 - Present</span>
+                        </div>
+                        <h3 class="project-title">Gamification System (Mobifone)</h3>
+                        <div class="project-company">
+                            <i class="bi bi-building"></i> IRIS Media Company • Backend Developer
+                        </div>
+                        <p class="project-desc">
+                            Commissioned by telecom giant <strong>Mobifone</strong>, this is an enterprise microservices solution delivering gamification services across multiple platforms: campaign management, player items, daily missions, and gift distribution.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Designed and developed decoupled backend services adhering to Microservices architecture and high-availability standards.</li>
+                            <li>Employed RabbitMQ for asynchronous message distribution and event-driven gift dispatching under high peak traffic.</li>
+                            <li>Integrated Blazor admin portal, PostgreSQL &amp; Oracle databases, and provided operational support during customer rollouts.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech-pills">
+                                <span class="project-tech-pill">ASP.NET Core</span>
+                                <span class="project-tech-pill">Blazor</span>
+                                <span class="project-tech-pill">RabbitMQ</span>
+                                <span class="project-tech-pill">PostgreSQL</span>
+                                <span class="project-tech-pill">Oracle</span>
+                                <span class="project-tech-pill">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: MobiFarm Project -->
+                <div class="col-lg-6 project-item reveal-on-scroll" data-category="telecom">
+                    <div class="glass-card project-card spotlight-card">
+                        <div class="project-header-meta">
+                            <span class="project-badge">Smart Agriculture</span>
+                            <span class="project-date"><i class="bi bi-calendar3"></i> 2022 - 2024</span>
+                        </div>
+                        <h3 class="project-title">MobiFarm Platform</h3>
+                        <div class="project-company">
+                            <i class="bi bi-building"></i> 3T Technology Company • Backend Developer
+                        </div>
+                        <p class="project-desc">
+                            A strategic collaboration project with Mobifone developing a multifunctional application tailored for the agriculture sector, empowering farmers and packing houses in recording, data retrieval, and training.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Defined overall system architecture, established clean coding conventions, and configured Linux server environments with Docker.</li>
+                            <li>Designed flexible MongoDB schema and developed robust ASP.NET Core RESTful APIs to handle agricultural data streams.</li>
+                            <li>Troubleshot critical performance bottlenecks and continuously iterated features based on customer specifications.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech-pills">
+                                <span class="project-tech-pill">ASP.NET Core</span>
+                                <span class="project-tech-pill">Web API</span>
+                                <span class="project-tech-pill">MongoDB</span>
+                                <span class="project-tech-pill">Docker</span>
+                                <span class="project-tech-pill">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Plant Protection Department -->
+                <div class="col-lg-6 project-item reveal-on-scroll" data-category="gov fullstack">
+                    <div class="glass-card project-card spotlight-card">
+                        <div class="project-header-meta">
+                            <span class="project-badge">Digital Transformation</span>
+                            <span class="project-date"><i class="bi bi-calendar3"></i> 2021 - 2023</span>
+                        </div>
+                        <h3 class="project-title">Plant Protection Department System</h3>
+                        <div class="project-company">
+                            <i class="bi bi-building"></i> 3T Technology Company • Full Stack Developer
+                        </div>
+                        <p class="project-desc">
+                            Government-commissioned series of digital transformation projects, modernizing the manual plant protection operations into a high-security, transparent web platform.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Established architectural boundaries, setup Docker containerization for both development and production clusters.</li>
+                            <li>Designed relational database schemas (MySQL, PostgreSQL) and developed secure ASP.NET Core Web APIs.</li>
+                            <li>Engineered modern, responsive web client using Angular and integrated Razor Pages for internal reporting.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech-pills">
+                                <span class="project-tech-pill">ASP.NET Core</span>
+                                <span class="project-tech-pill">Angular</span>
+                                <span class="project-tech-pill">PostgreSQL</span>
+                                <span class="project-tech-pill">MySQL</span>
+                                <span class="project-tech-pill">Razor Pages</span>
+                                <span class="project-tech-pill">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://cms.packinghouse.online" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>Live Portal</span> <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Ananda One -->
+                <div class="col-lg-6 project-item reveal-on-scroll" data-category="fullstack">
+                    <div class="glass-card project-card spotlight-card">
+                        <div class="project-header-meta">
+                            <span class="project-badge">International Outsourcing</span>
+                            <span class="project-date"><i class="bi bi-calendar3"></i> 2020 - 2022</span>
+                        </div>
+                        <h3 class="project-title">Ananda One Management</h3>
+                        <div class="project-company">
+                            <i class="bi bi-building"></i> Mobix Company • Junior Developer
+                        </div>
+                        <p class="project-desc">
+                            An international outsourcing project from Thailand managing user information, residential services, and amenities for urban areas and luxury resort properties.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Engineered backend Web APIs and provided active technical support for the Mobile Application Team.</li>
+                            <li>Partnered directly with Product Owner and International Design Team to refine UI/UX flows in Angular.</li>
+                            <li>Refactored legacy modules, improving code maintainability and supporting evolving service specifications.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech-pills">
+                                <span class="project-tech-pill">ASP.NET Core</span>
+                                <span class="project-tech-pill">Angular</span>
+                                <span class="project-tech-pill">Web API</span>
+                                <span class="project-tech-pill">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://care-admin-uat.ananda.co.th/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>UAT Demo</span> <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Career Timeline & Education Section -->
+    <section class="content-section" id="experience">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-diagram-3"></i> Career Journey
+                </div>
+                <h2 class="section-title">
+                    Experience &amp; <span class="text-gradient">Education</span>
+                </h2>
+                <p class="section-subtitle">
+                    A continuous trajectory of engineering growth, enterprise responsibility, and technical mastery.
+                </p>
+            </div>
+
+            <!-- Timeline Switcher Tabs -->
+            <div class="timeline-tabs reveal-on-scroll">
+                <button class="timeline-tab-btn active" data-target="experienceStream">
+                    <i class="bi bi-briefcase-fill"></i> Work Experience
+                </button>
+                <button class="timeline-tab-btn" data-target="educationStream">
+                    <i class="bi bi-mortarboard-fill"></i> Education &amp; Achievements
+                </button>
+            </div>
+
+            <!-- Work Experience Stream -->
+            <div class="timeline-stream-container" id="experienceStream">
+                <div class="timeline-stream">
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">02/2025 - PRESENT</div>
+                            <h3 class="h5 mb-1 text-main">Backend Developer • Milpay eWallet</h3>
+                            <h4 class="h6 text-primary mb-3">IRIS Media Company</h4>
+                            <p class="text-muted small mb-0">
+                                Spearheaded core backend fintech services for digital wallet: transaction processing, balance locks, Keycloak authentication, and high-security compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">2024 - PRESENT</div>
+                            <h3 class="h5 mb-1 text-main">Backend Developer • Gamification Microservices</h3>
+                            <h4 class="h6 text-info mb-3">IRIS Media Company (Client: Mobifone)</h4>
+                            <p class="text-muted small mb-0">
+                                Engineered distributed microservices for campaign management, player items, and mission rewards using ASP.NET Core, RabbitMQ, and PostgreSQL.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">2022 - 2024</div>
+                            <h3 class="h5 mb-1 text-main">Backend Developer • MobiFarm Project</h3>
+                            <h4 class="h6 text-success mb-3">3T Technology Company (Client: Mobifone)</h4>
+                            <p class="text-muted small mb-0">
+                                Defined architecture, implemented Docker setup, and created MongoDB-backed APIs to support modern agriculture data workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">2021 - 2023</div>
+                            <h3 class="h5 mb-1 text-main">Full Stack Developer • Plant Protection Dept</h3>
+                            <h4 class="h6 text-warning mb-3">3T Technology Company (Government Project)</h4>
+                            <p class="text-muted small mb-0">
+                                Delivered fullstack capabilities (Angular + ASP.NET Core), migrating manual government agricultural processes to automated digital software.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 5 -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">2020 - 2022</div>
+                            <h3 class="h5 mb-1 text-main">Junior Developer • Ananda One</h3>
+                            <h4 class="h6 text-secondary mb-3">Mobix Company (Thailand Outsourcing)</h4>
+                            <p class="text-muted small mb-0">
+                                Built web APIs, resolved bugs, and collaborated on Angular UI development for international resort and community management systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Stream -->
+            <div class="timeline-stream-container" id="educationStream" style="display: none; opacity: 0;">
+                <div class="timeline-stream">
+                    <!-- HUST -->
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="glass-card timeline-card spotlight-card">
+                            <div class="timeline-date-chip">2018 - 2022</div>
+                            <h3 class="h5 mb-1 text-main">Hanoi University of Science and Technology (ĐH Bách Khoa Hà Nội)</h3>
+                            <h4 class="h6 text-primary mb-2">Major: Information Technology / Computer Science</h4>
+                            <div class="badge bg-success text-white py-2 px-3 mb-3">
+                                Degree Classification: Very Good (Loại Giỏi)
+                            </div>
+                            <p class="text-muted small mb-0">
+                                Rigorous academic foundation in Data Structures, Advanced Algorithms, Computer Networks, Operating Systems, Database Management Systems, and Object-Oriented Software Engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests & Philosophy Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-heart-pulse"></i> Interests &amp; Lifestyle
+                </div>
+                <h2 class="section-title">
+                    Beyond the <span class="text-gradient">Codebase</span>
+                </h2>
+                <p class="section-subtitle">
+                    Continuous learning and a balanced mindset fuel my passion for building high-quality software.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 reveal-on-scroll">
+                    <div class="glass-card interest-card spotlight-card">
+                        <div class="interest-icon-circle">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h3 class="h5 text-main mb-2">Coding &amp; Exploring Emerging Tech</h3>
+                        <p class="text-muted small mb-3">
+                            In my free time, I experiment with AI developer tools, microservice patterns, and publish personal open-source projects on GitHub.
+                        </p>
+                        <a href="https://github.com/chukun09" target="_blank" rel="noopener noreferrer" class="btn-secondary-glass py-2 px-3 small">
+                            <i class="fab fa-github"></i> Visit my GitHub @chukun09
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 reveal-on-scroll">
+                    <div class="glass-card interest-card spotlight-card">
+                        <div class="interest-icon-circle">
+                            <i class="bi bi-cup-hot-fill"></i>
+                        </div>
+                        <h3 class="h5 text-main mb-2">Coffee &amp; Billiards</h3>
+                        <p class="text-muted small mb-3">
+                            On weekends, I enjoy relaxing at cozy coffee shops, exchanging tech ideas, and playing strategic billiards with close friends to recharge energy.
+                        </p>
+                        <span class="text-dim small font-mono">Work Hard • Recharge Smart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Work Together Section -->
+    <section class="content-section" id="contact">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <div class="section-tag">
+                    <i class="bi bi-send"></i> Get In Touch
+                </div>
+                <h2 class="section-title">
+                    Let's Build Something <span class="text-gradient">Extraordinary</span>
+                </h2>
+                <p class="section-subtitle">
+                    Whether you have an ambitious project, an engineering role, or a technical inquiry, feel free to reach out.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Contact Details Card with 1-Click Copy -->
+                <div class="col-lg-5 reveal-on-scroll">
+                    <div class="glass-card contact-info-card spotlight-card">
+                        <h3 class="h4 mb-4 text-main">Direct Contacts</h3>
+
+                        <!-- Phone -->
+                        <div class="contact-quick-item">
+                            <div class="contact-item-left">
+                                <div class="contact-item-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-item-label">Phone / Zalo</div>
+                                    <div class="contact-item-val font-mono">0981 392 920</div>
+                                </div>
+                            </div>
+                            <button class="copy-btn" data-copy="0981392920" title="Copy Phone Number">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-quick-item">
+                            <div class="contact-item-left">
+                                <div class="contact-item-icon">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-item-label">Email Address</div>
+                                    <div class="contact-item-val font-mono" style="word-break: break-all;">long.tranducbn@gmail.com</div>
+                                </div>
+                            </div>
+                            <button class="copy-btn" data-copy="long.tranducbn@gmail.com" title="Copy Email">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-quick-item">
+                            <div class="contact-item-left">
+                                <div class="contact-item-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-item-label">Location</div>
+                                    <div class="contact-item-val">11 Gieng Mut, Hai Ba Trung, Ha Noi</div>
+                                </div>
+                            </div>
+                            <button class="copy-btn" data-copy="11 Gieng Mut, Hai Ba Trung, Ha Noi" title="Copy Address">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+
+                        <!-- GitHub Link -->
+                        <div class="contact-quick-item">
+                            <div class="contact-item-left">
+                                <div class="contact-item-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-item-label">GitHub Repository</div>
+                                    <div class="contact-item-val font-mono">github.com/chukun09</div>
+                                </div>
+                            </div>
+                            <a href="https://github.com/chukun09" target="_blank" rel="noopener noreferrer" class="copy-btn text-decoration-none" title="Open GitHub">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top border-secondary">
+                            <small class="text-muted d-block mb-3">Connect on Social Channels:</small>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/chukun09" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/duclong1412/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.facebook.com/longtranduc.2000/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/duclong_1412/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Message Form -->
+                <div class="col-lg-7 reveal-on-scroll">
+                    <div class="glass-card contact-form-card spotlight-card">
+                        <h3 class="h4 mb-4 text-main">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="senderName" class="form-label text-muted small">Your Name</label>
+                                    <input type="text" class="custom-form-control" id="senderName" placeholder="e.g. Alex Nguyen" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="senderEmail" class="form-label text-muted small">Your Email</label>
+                                    <input type="email" class="custom-form-control" id="senderEmail" placeholder="e.g. alex@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="senderSubject" class="form-label text-muted small">Subject</label>
+                                    <input type="text" class="custom-form-control" id="senderSubject" placeholder="e.g. Collaboration on .NET Architecture" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="senderMessage" class="form-label text-muted small">Message</label>
+                                    <textarea class="custom-form-control" id="senderMessage" rows="5" placeholder="Share project details or inquiry..." required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-primary-glow w-100 justify-content-center" id="sendMessageBtn">
+                                        <i class="bi bi-send-fill"></i>
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Timeline</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="mb-1 text-muted">
+                Crafted with <i class="bi bi-heart-fill text-danger"></i> &amp; modern engineering standards by <strong class="text-main">Trần Đức Long</strong>.
+            </p>
+            <p class="mb-0 text-dim small">
+                &copy; 2026 Trần Đức Long. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="custom-toast" id="customToast" role="alert" aria-live="assertive" aria-atomic="true">
+        <i class="bi bi-check-circle-fill"></i>
+        <span id="toastMessage">Action completed successfully!</span>
     </div>
-    </div>
-    <!-- Copyright End -->
 
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
+    <!-- Modern Interactions & Antigravity Physics JS -->
     <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,142 @@
+{
+  "js/main.js": {
+    "mtime": 1790233993.1916404,
+    "ast_hash": "180540ec4b5ba0efcf22850c9a1db2b9",
+    "semantic_hash": ""
+  },
+  "lib/counterup/counterup.min.js": {
+    "mtime": 1754282862.375301,
+    "ast_hash": "26bbeaa163b7e3e8ba4021535f401f26",
+    "semantic_hash": ""
+  },
+  "lib/easing/easing.js": {
+    "mtime": 1754282862.375301,
+    "ast_hash": "810ce7d8ea07b5f5faefac3d94c15f4c",
+    "semantic_hash": ""
+  },
+  "lib/easing/easing.min.js": {
+    "mtime": 1754282862.375301,
+    "ast_hash": "d64116a742887080b3a0abd09e0bdad7",
+    "semantic_hash": ""
+  },
+  "lib/isotope/isotope.pkgd.js": {
+    "mtime": 1754282862.3763003,
+    "ast_hash": "14d51ea3c133445f8427b83903a67cd4",
+    "semantic_hash": ""
+  },
+  "lib/isotope/isotope.pkgd.min.js": {
+    "mtime": 1754282862.3763003,
+    "ast_hash": "7f46b6ffd35ecb35201be7be8a019cea",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/js/lightbox.js": {
+    "mtime": 1754282862.378301,
+    "ast_hash": "f58c229bd407f4063d935b0a02f40191",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/js/lightbox.min.js": {
+    "mtime": 1754282862.3793008,
+    "ast_hash": "ac84ca24f7d82035f7d2960c6574c678",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/links.php": {
+    "mtime": 1754282862.3793008,
+    "ast_hash": "d846d16baf562c484b9329e028075fa7",
+    "semantic_hash": ""
+  },
+  "lib/owlcarousel/owl.carousel.js": {
+    "mtime": 1754282862.382301,
+    "ast_hash": "cd1dcb9678ef5dfb8c1d54f0a65a59da",
+    "semantic_hash": ""
+  },
+  "lib/owlcarousel/owl.carousel.min.js": {
+    "mtime": 1754282862.382301,
+    "ast_hash": "56b28ad35f1816c6894b14190a0a006d",
+    "semantic_hash": ""
+  },
+  "lib/typed/typed.js": {
+    "mtime": 1754282862.3833013,
+    "ast_hash": "e4c2a51f0cbdd6bc2e118a4cdb1c4aed",
+    "semantic_hash": ""
+  },
+  "lib/typed/typed.min.js": {
+    "mtime": 1754282862.3833013,
+    "ast_hash": "e91166b6b62064b0c6e7992b05b1e94f",
+    "semantic_hash": ""
+  },
+  "lib/waypoints/links.php": {
+    "mtime": 1754282862.3833013,
+    "ast_hash": "9ce55e11461aedb16133af6e27bd2b88",
+    "semantic_hash": ""
+  },
+  "lib/waypoints/waypoints.min.js": {
+    "mtime": 1754282862.3838055,
+    "ast_hash": "cebc34dedef229a98275955df75e20e5",
+    "semantic_hash": ""
+  },
+  "lib/wow/wow.js": {
+    "mtime": 1754282862.3838055,
+    "ast_hash": "a42b4ffa587794f087d064affc5b577d",
+    "semantic_hash": ""
+  },
+  "lib/wow/wow.min.js": {
+    "mtime": 1754282862.3838055,
+    "ast_hash": "5ccc5286f6d87963ed8474ff9ed6f146",
+    "semantic_hash": ""
+  },
+  "LICENSE.txt": {
+    "mtime": 1754282862.3693006,
+    "ast_hash": "148600371a17315f2a38835a590be4a0",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1790233865.3778875,
+    "ast_hash": "f1bb9f1789ccaecf0c02e6cdfeab09f9",
+    "semantic_hash": ""
+  },
+  "CV_Tran-Duc-Long-030625.pdf": {
+    "mtime": 1748943792.8328354,
+    "ast_hash": "5876cda1ebce3d6d0be90d9524c4077d",
+    "semantic_hash": ""
+  },
+  "img/avatar.png": {
+    "mtime": 1754282862.3723006,
+    "ast_hash": "6cc49f768fafd4d9e9b2c3e3e685d704",
+    "semantic_hash": ""
+  },
+  "img/profile.png": {
+    "mtime": 1754282862.3733006,
+    "ast_hash": "cacafba4c4e070fcb5518a0b65c625c3",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/images/close.png": {
+    "mtime": 1754282862.3773005,
+    "ast_hash": "d9d2d0b1308cb694aa8116915592e2a9",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/images/loading.gif": {
+    "mtime": 1754282862.3773005,
+    "ast_hash": "2299ad0b3f63413f026dfec20c205b8f",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/images/next.png": {
+    "mtime": 1754282862.378301,
+    "ast_hash": "31f15875975aab69085470aabbfec802",
+    "semantic_hash": ""
+  },
+  "lib/lightbox/images/prev.png": {
+    "mtime": 1754282862.378301,
+    "ast_hash": "84b76dee6b27b795e89e3649078a11c2",
+    "semantic_hash": ""
+  },
+  "lib/owlcarousel/assets/ajax-loader.gif": {
+    "mtime": 1754282862.3803017,
+    "ast_hash": "01000918725acebd286de3787fca4ee0",
+    "semantic_hash": ""
+  },
+  "lib/owlcarousel/assets/owl.video.play.png": {
+    "mtime": 1754282862.3813012,
+    "ast_hash": "4a37f8008959c75f619bf0a3a4e2d7a2",
+    "semantic_hash": ""
+  }
+}
